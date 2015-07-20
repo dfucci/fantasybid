@@ -5,5 +5,12 @@ describe "When starting", () ->
     expect(parseInt($('.remaining').text())).toBeGreaterThan 0
 
 describe "When extracting a new football player", () ->
-  it "a player is in Session", () ->
+  it "a player should be in Session", () ->
     expect(Session.get('currentPlayer')).not.toBeNull
+
+  it "should decrease the number of remaining", () ->
+    currentRemaining = parseInt($('.remaining').text())
+    #Meteor.call "drawPlayer", Session.get "role"
+    $('.draw').click()
+    remaining = parseInt($('.remaining').text())
+    expect(remaining).toBe currentRemaining - 1
