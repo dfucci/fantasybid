@@ -5,4 +5,5 @@ Meteor.methods
     player = Footballers.find({role: role}).fetch()[0]
     if !player
       throw new Meteor.Error("player-does-not-exist", "Can't extract player")
+    Footballers.remove player._id
     return player
