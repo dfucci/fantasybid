@@ -1,9 +1,16 @@
 @Footballers = new Mongo.Collection 'footballers'
+@Current = new Mongo.Collection 'current'
 
 Meteor.methods
-  drawPlayer: (role) ->
-    player = Footballers.find({role: role}).fetch()[0]
-    if !player
-      throw new Meteor.Error("player-does-not-exist", "Can't extract player")
-    Footballers.remove player._id
-    return player
+  drawFootballer: (role) ->
+    players = Footballers.find({"role" : role}).fetch()
+    if players
+      shuffled = _.shuffle players
+      Footballers.remove shuffled[0]
+
+      # or update?
+      Current.remove({})
+      Current.insert {"player":shuffled[0], "remaining":shuffled.length-1}
+    else
+      throw new Meteor.Error "no-more-footballers", "You run out of footballers"
+

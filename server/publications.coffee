@@ -1,1 +1,1 @@
-Meteor.publish 'footballers', -> Footballers.find()
+Meteor.publish 'footballer', -> Current.find()

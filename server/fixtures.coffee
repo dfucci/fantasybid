@@ -1,3 +1,5 @@
+Current.remove({})
+
 if Footballers.find().count() == 0
  _.shuffle([
     {name: "Francesco Totti", team: "Roma", role: "F"}
@@ -5,3 +7,4 @@ if Footballers.find().count() == 0
     {name: "Gigi Buffon", team: "Juventus", role: "G"}
   ]).forEach (data) ->
       Footballers.insert data
+
