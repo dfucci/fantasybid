@@ -14,3 +14,8 @@ Meteor.methods
     else
       throw new Meteor.Error "no-more-footballers", "You run out of footballers"
 
+  remainingPlayers: (role) ->
+    remainingPlayers = Footballers.find({"role": role}).count()
+    if remainingPlayers?
+      Current.update({}, {$set: {remaining: remainingPlayers}}, {upsert: true})
+    else throw new Meteor.Error "no-role", "Cannot find role"
