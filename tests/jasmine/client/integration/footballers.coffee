@@ -13,3 +13,7 @@ describe "When extracting a new football player", () ->
     remaining = parseInt($('.remaining').text())
     expect(remaining).toBe currentRemaining - 1
     pending()
+
+describe "when the admin is logged in", ->
+  it "she can see dropdown list and draw button"
+  pending()

@@ -10,3 +10,4 @@ iron:router
 sanjo:jasmine
 velocity:html-reporter
 accounts-password
+accounts-ui

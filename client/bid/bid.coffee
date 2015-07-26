@@ -1,3 +1,7 @@
+Template.bid.helpers
+  isAdmin: -> Meteor.user()?.emails[0].address is "admin@fantanarchist.com"
+  disableDraw: -> Current.find().fetch()[0].remaining   is 0
+
 Template.bid.events
   "change .roles": (e, tpl) ->
     e.preventDefault()
@@ -14,4 +18,4 @@ Template.bid.events
     if role isnt "A"
       Meteor.call "drawFootballer", role, (error, response) ->
         alert error.reason if error
-    tpl.$(".draw").prop("disabled", true) unless parseInt(tpl.$(".remaining").text()) is 0
+
