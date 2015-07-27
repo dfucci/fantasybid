@@ -1,6 +1,6 @@
 Template.bid.helpers
   isAdmin: -> Meteor.user()?.emails[0].address is "admin@fantanarchist.com"
-  disableDraw: -> Current.find().fetch()[0].remaining   is 0
+  disableDraw: -> Current.find().fetch()[0].remaining is 0
 
 Template.bid.events
   "change .roles": (e, tpl) ->
