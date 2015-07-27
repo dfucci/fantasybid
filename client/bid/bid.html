@@ -1,13 +1,6 @@
 <template name="bid">
-    {{#if isAdmin}}
-        <select name="role" class="roles">
-            <option value="A">-- Select role --</option>
-            <option value="G">Goalkeeper</option>
-            <option value="D">Defender</option>
-            <option value="M">Midfielder</option>
-            <option value="F">Forward</option>
-        </select> <br/>
-        <button class="draw" disabled={{disableDraw}}>Draw!</button>
-    {{/if}}
-    Remaining: <span class="remaining">{{ current.remaining }}</span><br/>
+    <form class="bid-form">
+        <input type="number" name="price" class="offering"/>
+        <button type="submit" class="offer">Offer!</button>
+    </form>
 </template>
