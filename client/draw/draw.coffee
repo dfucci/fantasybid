@@ -18,4 +18,10 @@ Template.draw.events
     if role isnt "A"
       Meteor.call "drawFootballer", role, (error, response) ->
         alert error.reason if error
+    current = Current.findOne()
+    Current.update({_id:current._id}, {$set:{bidding:false}})
 
+  "click .stopBid": (e, tpl) ->
+    e.preventDefault()
+    current = Current.findOne()
+    Current.update({_id:current._id}, {$set:{bidding:true}})
