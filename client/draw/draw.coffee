@@ -1,6 +1,6 @@
 Template.draw.helpers
   isAdmin: -> Meteor.user()?.emails[0].address is "admin@fantanarchist.com"
-  disableDraw: -> Current.find().fetch()[0].remaining is 0
+  disableDraw: -> Current.find().fetch()[0]?.remaining is 0
 
 Template.draw.events
   "change .roles": (e, tpl) ->
@@ -10,7 +10,6 @@ Template.draw.events
       Meteor.call 'remainingPlayers', role, (err, res) ->
         alert err.reason if err
     tpl.$(".remaining").text "" if role is "A"
-
 
   "click .draw": (e, tpl) ->
     e.preventDefault()
