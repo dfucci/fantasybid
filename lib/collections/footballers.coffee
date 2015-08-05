@@ -1,6 +1,10 @@
 @Footballers = new Mongo.Collection 'footballers'
 @Current = new Mongo.Collection 'current'
 
+Current.allow
+  update: ->
+    true
+
 Meteor.methods
   drawFootballer: (role) ->
     players = Footballers.find({"role" : role}).fetch()

@@ -2,5 +2,8 @@
     <h1>Welcome</h1>
     {{> loginButtons }} <br/>
     {{> footballer }}
-    {{> bid}}
+    {{> draw}}
+    {{#if loggedIn }}
+        {{ > bid }}
+    {{/if}}
 </template>

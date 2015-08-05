@@ -7085,7 +7085,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "a8d6e93fdcd35ed0ac3f8538da9445e10dfb906d"
+                  "value": "30fe67b5bf0b49a7e9b2186eaf3b7edb62ed604c"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7209,7 +7209,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 1
+              "value": 4
             },
             "timeout": {
               "type": "constant",
@@ -7852,11 +7852,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "2478e966dbebbb1adc9582278f0af181499e4dc5"
+          "value": "87088656b4929138d192ff666f2e3e3b6d20349b"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "e1cc6498fd669c716c5bafd3115a170e214b6d14"
+          "value": "6f5b547867a449a63cffeddf7affe9e2a9143fe3"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -9836,6 +9836,7 @@ var packageMetadata = {
   },
   "accounts-password": {},
   "accounts-ui": {},
+  "bootstrap": {},
   "session": {},
   "livedata": {
     "DDP": {
