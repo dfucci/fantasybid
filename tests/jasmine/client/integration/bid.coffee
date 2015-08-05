@@ -5,13 +5,10 @@ describe "When a bid is made", ->
       $(".draw").click()
       Meteor.logout ->
         done()
-
   it "a bid participant should be logged in", (done) ->
     Meteor.loginWithPassword "davide@fantanarchist.com", "123456", (err) ->
       expect(err).toBeUndefined()
-
       $(".offering").val(8)
-      $(".offer").click()
-      expect($(".cost").text()).toBe "8"
-      #Meteor.logout ->
-      #  done()
+      $(".offer").click -> expect($(".cost").text()).toBe "8"
+      Meteor.logout ->
+        done()
