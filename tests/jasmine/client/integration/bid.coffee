@@ -24,3 +24,6 @@ describe "When a bid is made", ->
           expect($('.cost').text()).toBe "8"
       Meteor.logout ->
         done()
+
+  describe "and the bidding is stopped", ->
+    it "assignes the player to the higher bidder", ->
