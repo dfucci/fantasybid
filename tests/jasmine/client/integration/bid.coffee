@@ -13,3 +13,14 @@ describe "When a bid is made", ->
       $(".offer").click -> expect($(".cost").text()).toBe "8"
       Meteor.logout ->
         done()
+
+  it "cannot bid a value less than the actual one", (done) ->
+    Meteor.loginWithPassword "davide@fantanarchist.com", "123456", (err) ->
+      expect(err).toBeUndefined()
+      $('.offering').val 8
+      $('.offer').click ->
+        $('.offering').val 6
+        $('.offer').click ->
+          expect($('.cost').text()).toBe "8"
+      Meteor.logout ->
+        done()
