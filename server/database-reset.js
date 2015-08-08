@@ -27,7 +27,7 @@ if (process.env.IS_MIRROR) {
 
         'clearDB': function(){
             console.log('Clear DB');
-
+            Mongo.users.update({}, {$set:{"profile.players":[]}}, {multi:true});
             var collectionsRemoved = 0;
             var db = Meteor.users.find()._mongo.db;
             db.collections(function (err, collections) {

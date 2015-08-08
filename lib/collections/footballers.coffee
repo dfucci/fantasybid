@@ -1,5 +1,8 @@
 @Footballers = new Mongo.Collection 'footballers'
 @Current = new Mongo.Collection 'current'
+Meteor.users.allow
+  update: ->
+    true
 
 Current.allow
   update: ->

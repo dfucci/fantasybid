@@ -24,3 +24,4 @@ Template.draw.events
     e.preventDefault()
     current = Current.findOne()
     Current.update({_id:current._id}, {$set:{bidding:true}})
+    Meteor.users.update({_id:current.player.ownerId},{$push:{"profile.players":current.player}})
