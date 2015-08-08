@@ -1,10 +1,11 @@
 Template.bid.events
   'click .offer': (e, tpl) ->
     e.preventDefault()
-    currentOffer = parseInt(Current.findOne().cost)
-    cPlayer = Current.findOne()
+    curr = Current.findOne()
+    currOffer = curr.player.cost ? 0
     offer = tpl.$('.offering').val()
-    Current.update({_id:cPlayer._id}, {$set:{"cost":offer}}) if offer > currentOffer
+    cOwner = Meteor.user().emails[0].address.split('@')[0]
+    Current.update({_id:curr._id}, {$set:{"player.cost":offer, "player.ownerId":Meteor.userId(), "player.owner":cOwner}}) if offer > parseInt currOffer
 
 Template.bid.helpers
-  currentOffering: -> parseInt(Current.findOne().cost) + 1
+  currentOffering: -> parseInt(Current.findOne().player.cost) + 1
