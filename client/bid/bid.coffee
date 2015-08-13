@@ -5,7 +5,7 @@ Template.bid.events
     currOffer = curr.player?.cost ? 0
     offer = tpl.$('.offering').val()
     cOwner = Meteor.user().emails[0].address.split('@')[0]
-    Current.update({_id:curr._id}, {$set:{"player.cost":offer, "player.ownerId":Meteor.userId(), "player.owner":cOwner}}) if hasSpotsLeft()
+    Current.update({_id:curr._id}, {$set:{"player.cost":offer, "player.ownerId":Meteor.userId(), "player.owner":cOwner}}) if canBid()
 
 Template.bid.helpers
   currentOffering: ->
@@ -35,11 +35,9 @@ hasSpotsLeft = ->
 
   role = Current.findOne().player.role
   playersInRole = _.filter(Meteor.user().profile.players, (pl) -> pl.role == role).length
-  console.log "there are #{playersInRole}"
   spots[role] - playersInRole > 0
 
 betterOffer = ->
-  curr = Current.findOne()
-  currOffer = curr.player?.cost ? 0
+  curr = Current.findOne().player.cost ? 0
   offer = $('.offering').val()
-  parseInt(currOffer) > offer
+  offer > parseInt(curr)
