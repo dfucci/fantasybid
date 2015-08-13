@@ -1,5 +1,13 @@
 @Footballers = new Mongo.Collection 'footballers'
 @Current = new Mongo.Collection 'current'
+
+# TODO: add credits when game starts
+# TODO: set proper number of slots per role
+# TODO: negative number bidding
+# TODO: transform email in username
+# TODO: fix UX
+
+
 Meteor.users.allow
   update: ->
     true

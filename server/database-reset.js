@@ -5,7 +5,7 @@ if (process.env.IS_MIRROR) {
     Meteor.methods({
         'loadFixtures': function(){
             console.log('Loading default fixtures');
-            // TODO: add your fixtures here
+            // add your fixtures here
             Accounts.createUser({
                 email: 'davide@fantanarchist.com',
                 password: '123456'
