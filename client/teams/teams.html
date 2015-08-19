@@ -1,0 +1,24 @@
+<template name="teams">
+    <h1>TEAMS</h1>
+    {{#each users}}
+        {{#each emails}}
+        <p>{{address}}</p>
+        {{/each}}
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>Role</td>
+                    <td>Team</td>
+                    <td>Cost</td>
+                </tr>
+                {{#each profile.players}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{role}}</td>
+                        <td>{{team}}</td>
+                        <td>{{cost}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        {{/each}}
+</template>
