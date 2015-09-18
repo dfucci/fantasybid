@@ -1,14 +1,14 @@
 <template name="draw">
     {{#if isAdmin}}
         <select name="role" class="roles">
-            <option value="A">-- Select role --</option>
-            <option value="G">Goalkeeper</option>
+            <option value="X">-- Select role --</option>
+            <option value="P">Goalkeeper</option>
             <option value="D">Defender</option>
-            <option value="M">Midfielder</option>
-            <option value="F">Forward</option>
+            <option value="C">Midfielder</option>
+            <option value="A">Forward</option>
         </select> <br/>
         <button class="draw" disabled={{disableDraw}}>Draw!</button>
-        <button class="stopBid">Stop!</button>
     {{/if}}
     Remaining: <span class="remaining">{{ current.remaining }}</span><br/>
+        <button class="stopBid">Stop!</button>
 </template>
