@@ -28,12 +28,12 @@ hasCredits = ->
 
 hasSpotsLeft = ->
   spots =
-    "G": 1
-    "D": 1
-    "M": 1
-    "F": 1
+    "P": 3
+    "D": 8
+    "M": 8
+    "F": 6
 
-  role = Current.findOne().player.role
+  role = Current.findOne().player.ROLE
   playersInRole = _.filter(Meteor.user().profile.players, (pl) -> pl.role == role).length
   spots[role] - playersInRole > 0
 
