@@ -5,7 +5,7 @@ Template.bid.events
     currOffer = curr.player?.cost ? 0
     offer = tpl.$('.offering').val()
     cOwner = Meteor.user().emails[0].address.split('@')[0]
-    Current.update({_id:curr._id}, {$set:{"player.cost":offer, "player.ownerId":Meteor.userId(), "player.owner":cOwner}}) if canBid()
+    Current.update({_id:curr._id}, {$set:{"player.cost":offer, "player.ownerId":Meteor.userId(), "player.owner":cOwner}}) 
 
 Template.bid.helpers
   currentOffering: ->
