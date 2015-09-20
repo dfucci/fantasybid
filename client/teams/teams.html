@@ -5,20 +5,25 @@
       <p><h4><span class="glyphicon glyphicon-user" ></span> {{formatEmail address}}</h4></p>
     {{/each}}
     <table class="table">
-      <tr>
-        <td><em>Name</em></td>
-        <td><em>Role</em></td>
-        <td><em>Team</em></td>
-        <td><em>Cost</em></td>
-      </tr>
-      {{#each profile.players}}
+      <thead>
         <tr>
-          <td>{{NAME}}</td>
-          <td>{{ROLE}}</td>
-          <td>{{TEAM}}</td>
-          <td>{{cost}}</td>
+          <th><em>Name</em></th>
+          <th><em>Role</em></th>
+          <th><em>Team</em></th>
+          <th><em>Cost</em></th>
         </tr>
-      {{/each}}
+      </thead>
+      <tbody>
+        {{#each profile.players}}
+          <tr>
+            <td>{{NAME}}</td>
+            <td>{{ROLE}}</td>
+            <td>{{TEAM}}</td>
+            <td>{{cost}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+      <tfoot>
       <tr>
         <td> 
           <p><strong>Remaining credits: {{profile.credits}} </strong> </p>
@@ -27,6 +32,7 @@
         <td></td>
         <td></td>
       </tr>
+      </tfoot>
     </table>
   {{/each}}
 </template>
