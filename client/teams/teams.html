@@ -1,24 +1,32 @@
 <template name="teams">
-    <h1>TEAMS</h1>
-    {{#each users}}
-        {{#each emails}}
-        <p>{{address}}</p>
-        {{/each}}
-            <table class="table">
-                <tr>
-                    <td>Name</td>
-                    <td>Role</td>
-                    <td>Team</td>
-                    <td>Cost</td>
-                </tr>
-                {{#each profile.players}}
-                    <tr>
-                        <td>{{NAME}}</td>
-                        <td>{{ROLE}}</td>
-                        <td>{{TEAM}}</td>
-                        <td>{{cost}}</td>
-                    </tr>
-                {{/each}}
-            </table>
-        {{/each}}
+  <h1>TEAMS</h1>
+  {{#each users}}
+    {{#each emails}}
+      <p>{{address}}</p>
+    {{/each}}
+    <table class="table">
+      <tr>
+        <td>Name</td>
+        <td>Role</td>
+        <td>Team</td>
+        <td>Cost</td>
+      </tr>
+      {{#each profile.players}}
+        <tr>
+          <td>{{NAME}}</td>
+          <td>{{ROLE}}</td>
+          <td>{{TEAM}}</td>
+          <td>{{cost}}</td>
+        </tr>
+      {{/each}}
+      <tr>
+        <td> 
+          <p><strong>Remaining credits: {{profile.credits}} </strong> </p>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  {{/each}}
 </template>
