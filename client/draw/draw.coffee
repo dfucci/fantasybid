@@ -25,5 +25,4 @@ Template.draw.events
     current = Current.findOne()
     Current.update({_id:current._id}, {$set:{bidding:true}})
     cost = parseInt current.player.cost
-    console.log cost
     Meteor.users.update({_id:current.player.ownerId},{$push:{"profile.players":current.player}, $inc:{"profile.credits": - cost}})
