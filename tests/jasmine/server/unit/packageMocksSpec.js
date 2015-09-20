@@ -7086,7 +7086,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "69b1a2d76386c98902f3d8f4f00f8b82dfa3c258"
+                  "value": "c23d872c481c516d794adfdc0a2848ac5606359d"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7101,7 +7101,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "b43618bf538d160228765d1bf3cde0b465e9ff30"
+                  "value": "cebddf21e10ab4ac489b2b92f6b8204841dda3fa"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7868,15 +7868,15 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "be81b2843827882837bb716bcc8b8ce5581bd08d"
+          "value": "60ce1c06f711078b15e688101bf2f4176623b2df"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "6f5b547867a449a63cffeddf7affe9e2a9143fe3"
+          "value": "ae6af3bcdc4dd8fef87dacc5de141560451b88c5"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
-          "value": "b43618bf538d160228765d1bf3cde0b465e9ff30"
+          "value": "cebddf21e10ab4ac489b2b92f6b8204841dda3fa"
         },
         "appId": {
           "type": "constant",
@@ -8731,6 +8731,25 @@ var packageMetadata = {
           "type": "function"
         }
       }
+    },
+    "ObjectLogger": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "enter": {
+              "type": "function"
+            },
+            "return": {
+              "type": "function"
+            },
+            "bindMethod": {
+              "type": "function"
+            }
+          }
+        }
+      }
     }
   },
   "velocity:chokidar": {
@@ -9067,6 +9086,16 @@ var packageMetadata = {
       }
     }
   },
+  "velocity:source-map-support": {
+    "SourceMapSupport": {
+      "type": "object",
+      "members": {
+        "install": {
+          "type": "function"
+        }
+      }
+    }
+  },
   "sanjo:long-running-child-process": {
     "LongRunningChildProcess": {
       "type": "function",
@@ -9264,11 +9293,11 @@ var packageMetadata = {
         },
         "mirrorMeteorVersion": {
           "type": "constant",
-          "value": "1.1.0.2_3"
+          "value": "1.1.0.3_2"
         },
         "mirrorMeteorRelease": {
           "type": "constant",
-          "value": "velocity:METEOR@1.1.0.2_3"
+          "value": "velocity:METEOR@1.1.0.3_2"
         },
         "mirrorMeteorToolReleaseName": {
           "type": "constant",
@@ -9276,11 +9305,11 @@ var packageMetadata = {
         },
         "mirrorMeteorToolVersion": {
           "type": "constant",
-          "value": "1.1.3_4"
+          "value": "1.1.4_2"
         },
         "mirrorMeteorToolRelease": {
           "type": "constant",
-          "value": "velocity:meteor-tool@1.1.3_4"
+          "value": "velocity:meteor-tool@1.1.4_2"
         }
       }
     },
@@ -9553,6 +9582,9 @@ var packageMetadata = {
         },
         "setConfig": {
           "type": "function"
+        },
+        "getConfigPath": {
+          "type": "function"
         }
       }
     },
@@ -9602,6 +9634,7 @@ var packageMetadata = {
       }
     }
   },
+  "grigio:babel": {},
   "velocity:html-reporter": {},
   "npm-bcrypt": {
     "NpmModuleBcrypt": {
@@ -9853,6 +9886,508 @@ var packageMetadata = {
   "accounts-password": {},
   "accounts-ui": {},
   "bootstrap": {},
+  "bootstrap3:base": {},
+  "bootstrap3:glyphicons": {},
+  "underscorestring:underscore.string": {
+    "s": {
+      "type": "function",
+      "members": {
+        "VERSION": {
+          "type": "constant",
+          "value": "3.2.1"
+        },
+        "isBlank": {
+          "type": "function"
+        },
+        "stripTags": {
+          "type": "function"
+        },
+        "capitalize": {
+          "type": "function"
+        },
+        "decapitalize": {
+          "type": "function"
+        },
+        "chop": {
+          "type": "function"
+        },
+        "trim": {
+          "type": "function",
+          "refID": 11
+        },
+        "clean": {
+          "type": "function"
+        },
+        "cleanDiacritics": {
+          "type": "function"
+        },
+        "count": {
+          "type": "function"
+        },
+        "chars": {
+          "type": "function"
+        },
+        "swapCase": {
+          "type": "function"
+        },
+        "escapeHTML": {
+          "type": "function"
+        },
+        "unescapeHTML": {
+          "type": "function"
+        },
+        "splice": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "replaceAll": {
+          "type": "function"
+        },
+        "include": {
+          "type": "function",
+          "refID": 33
+        },
+        "join": {
+          "type": "function"
+        },
+        "lines": {
+          "type": "function"
+        },
+        "dedent": {
+          "type": "function"
+        },
+        "reverse": {
+          "type": "function"
+        },
+        "startsWith": {
+          "type": "function"
+        },
+        "endsWith": {
+          "type": "function"
+        },
+        "pred": {
+          "type": "function"
+        },
+        "succ": {
+          "type": "function"
+        },
+        "titleize": {
+          "type": "function"
+        },
+        "camelize": {
+          "type": "function",
+          "refID": 53
+        },
+        "underscored": {
+          "type": "function"
+        },
+        "dasherize": {
+          "type": "function"
+        },
+        "classify": {
+          "type": "function"
+        },
+        "humanize": {
+          "type": "function"
+        },
+        "ltrim": {
+          "type": "function",
+          "refID": 63
+        },
+        "rtrim": {
+          "type": "function",
+          "refID": 65
+        },
+        "truncate": {
+          "type": "function"
+        },
+        "prune": {
+          "type": "function"
+        },
+        "words": {
+          "type": "function"
+        },
+        "pad": {
+          "type": "function"
+        },
+        "lpad": {
+          "type": "function",
+          "refID": 75
+        },
+        "rpad": {
+          "type": "function",
+          "refID": 77
+        },
+        "lrpad": {
+          "type": "function",
+          "refID": 79
+        },
+        "sprintf": {
+          "type": "function",
+          "members": {
+            "format": {
+              "type": "function"
+            },
+            "cache": {
+              "type": "object"
+            },
+            "parse": {
+              "type": "function"
+            }
+          }
+        },
+        "vsprintf": {
+          "type": "function"
+        },
+        "toNumber": {
+          "type": "function"
+        },
+        "numberFormat": {
+          "type": "function"
+        },
+        "strRight": {
+          "type": "function"
+        },
+        "strRightBack": {
+          "type": "function"
+        },
+        "strLeft": {
+          "type": "function"
+        },
+        "strLeftBack": {
+          "type": "function"
+        },
+        "toSentence": {
+          "type": "function"
+        },
+        "toSentenceSerial": {
+          "type": "function"
+        },
+        "slugify": {
+          "type": "function"
+        },
+        "surround": {
+          "type": "function"
+        },
+        "quote": {
+          "type": "function",
+          "refID": 110
+        },
+        "unquote": {
+          "type": "function"
+        },
+        "repeat": {
+          "type": "function"
+        },
+        "naturalCmp": {
+          "type": "function"
+        },
+        "levenshtein": {
+          "type": "function"
+        },
+        "toBoolean": {
+          "type": "function",
+          "refID": 120
+        },
+        "exports": {
+          "type": "function"
+        },
+        "escapeRegExp": {
+          "type": "function"
+        },
+        "wrap": {
+          "type": "function"
+        },
+        "strip": {
+          "ref": 11
+        },
+        "lstrip": {
+          "ref": 63
+        },
+        "rstrip": {
+          "ref": 65
+        },
+        "center": {
+          "ref": 79
+        },
+        "rjust": {
+          "ref": 75
+        },
+        "ljust": {
+          "ref": 77
+        },
+        "contains": {
+          "ref": 33
+        },
+        "q": {
+          "ref": 110
+        },
+        "toBool": {
+          "ref": 120
+        },
+        "camelcase": {
+          "ref": 53
+        },
+        "prototype": {
+          "type": "object",
+          "members": {
+            "value": {
+              "type": "function"
+            },
+            "isBlank": {
+              "type": "function"
+            },
+            "stripTags": {
+              "type": "function"
+            },
+            "capitalize": {
+              "type": "function"
+            },
+            "decapitalize": {
+              "type": "function"
+            },
+            "chop": {
+              "type": "function"
+            },
+            "trim": {
+              "type": "function"
+            },
+            "clean": {
+              "type": "function"
+            },
+            "cleanDiacritics": {
+              "type": "function"
+            },
+            "count": {
+              "type": "function"
+            },
+            "chars": {
+              "type": "function"
+            },
+            "swapCase": {
+              "type": "function"
+            },
+            "escapeHTML": {
+              "type": "function"
+            },
+            "unescapeHTML": {
+              "type": "function"
+            },
+            "splice": {
+              "type": "function"
+            },
+            "insert": {
+              "type": "function"
+            },
+            "replaceAll": {
+              "type": "function"
+            },
+            "include": {
+              "type": "function"
+            },
+            "join": {
+              "type": "function"
+            },
+            "lines": {
+              "type": "function"
+            },
+            "dedent": {
+              "type": "function"
+            },
+            "reverse": {
+              "type": "function"
+            },
+            "startsWith": {
+              "type": "function"
+            },
+            "endsWith": {
+              "type": "function"
+            },
+            "pred": {
+              "type": "function"
+            },
+            "succ": {
+              "type": "function"
+            },
+            "titleize": {
+              "type": "function"
+            },
+            "camelize": {
+              "type": "function"
+            },
+            "underscored": {
+              "type": "function"
+            },
+            "dasherize": {
+              "type": "function"
+            },
+            "classify": {
+              "type": "function"
+            },
+            "humanize": {
+              "type": "function"
+            },
+            "ltrim": {
+              "type": "function"
+            },
+            "rtrim": {
+              "type": "function"
+            },
+            "truncate": {
+              "type": "function"
+            },
+            "prune": {
+              "type": "function"
+            },
+            "words": {
+              "type": "function"
+            },
+            "pad": {
+              "type": "function"
+            },
+            "lpad": {
+              "type": "function"
+            },
+            "rpad": {
+              "type": "function"
+            },
+            "lrpad": {
+              "type": "function"
+            },
+            "sprintf": {
+              "type": "function"
+            },
+            "vsprintf": {
+              "type": "function"
+            },
+            "toNumber": {
+              "type": "function"
+            },
+            "numberFormat": {
+              "type": "function"
+            },
+            "strRight": {
+              "type": "function"
+            },
+            "strRightBack": {
+              "type": "function"
+            },
+            "strLeft": {
+              "type": "function"
+            },
+            "strLeftBack": {
+              "type": "function"
+            },
+            "toSentence": {
+              "type": "function"
+            },
+            "toSentenceSerial": {
+              "type": "function"
+            },
+            "slugify": {
+              "type": "function"
+            },
+            "surround": {
+              "type": "function"
+            },
+            "quote": {
+              "type": "function"
+            },
+            "unquote": {
+              "type": "function"
+            },
+            "repeat": {
+              "type": "function"
+            },
+            "naturalCmp": {
+              "type": "function"
+            },
+            "levenshtein": {
+              "type": "function"
+            },
+            "toBoolean": {
+              "type": "function"
+            },
+            "exports": {
+              "type": "function"
+            },
+            "escapeRegExp": {
+              "type": "function"
+            },
+            "wrap": {
+              "type": "function"
+            },
+            "strip": {
+              "type": "function"
+            },
+            "lstrip": {
+              "type": "function"
+            },
+            "rstrip": {
+              "type": "function"
+            },
+            "center": {
+              "type": "function"
+            },
+            "rjust": {
+              "type": "function"
+            },
+            "ljust": {
+              "type": "function"
+            },
+            "contains": {
+              "type": "function"
+            },
+            "q": {
+              "type": "function"
+            },
+            "toBool": {
+              "type": "function"
+            },
+            "camelcase": {
+              "type": "function"
+            },
+            "future": {
+              "type": "function"
+            },
+            "deprecate": {
+              "type": "function"
+            },
+            "tap": {
+              "type": "function"
+            },
+            "toUpperCase": {
+              "type": "function"
+            },
+            "toLowerCase": {
+              "type": "function"
+            },
+            "split": {
+              "type": "function"
+            },
+            "replace": {
+              "type": "function"
+            },
+            "slice": {
+              "type": "function"
+            },
+            "substring": {
+              "type": "function"
+            },
+            "substr": {
+              "type": "function"
+            },
+            "concat": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "reneberwanger:bootstrap-table": {},
   "session": {},
   "livedata": {
     "DDP": {
