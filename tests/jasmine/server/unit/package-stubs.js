@@ -7085,7 +7085,22 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "370654e31c607d81374c560daa57bd03aabdcbab"
+                  "value": "69b1a2d76386c98902f3d8f4f00f8b82dfa3c258"
+                },
+                "PUBLIC_SETTINGS": {
+                  "type": "undefined"
+                }
+              }
+            },
+            "web.cordova": {
+              "type": "object",
+              "members": {
+                "manifest": {
+                  "type": "array"
+                },
+                "version": {
+                  "type": "constant",
+                  "value": "b43618bf538d160228765d1bf3cde0b465e9ff30"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7105,46 +7120,46 @@ var packageMetadata = {
           "members": {
             "use": {
               "type": "function",
-              "refID": 9
+              "refID": 11
             },
             "handle": {
               "type": "function",
-              "refID": 11
+              "refID": 13
             },
             "listen": {
               "type": "function",
-              "refID": 13
+              "refID": 15
             },
             "setMaxListeners": {
               "type": "function",
-              "refID": 15
+              "refID": 17
             },
             "emit": {
               "type": "function",
-              "refID": 17
+              "refID": 19
             },
             "addListener": {
               "type": "function",
-              "refID": 19
+              "refID": 21
             },
             "on": {
-              "ref": 19
+              "ref": 21
             },
             "once": {
               "type": "function",
-              "refID": 21
+              "refID": 23
             },
             "removeListener": {
               "type": "function",
-              "refID": 23
+              "refID": 25
             },
             "removeAllListeners": {
               "type": "function",
-              "refID": 25
+              "refID": 27
             },
             "listeners": {
               "type": "function",
-              "refID": 27
+              "refID": 29
             },
             "route": {
               "type": "constant",
@@ -7159,37 +7174,37 @@ var packageMetadata = {
           "type": "function",
           "members": {
             "use": {
-              "ref": 9
-            },
-            "handle": {
               "ref": 11
             },
-            "listen": {
+            "handle": {
               "ref": 13
             },
-            "setMaxListeners": {
+            "listen": {
               "ref": 15
             },
-            "emit": {
+            "setMaxListeners": {
               "ref": 17
             },
+            "emit": {
+              "ref": 19
+            },
             "addListener": {
-              "ref": 19
-            },
-            "on": {
-              "ref": 19
-            },
-            "once": {
               "ref": 21
             },
-            "removeListener": {
+            "on": {
+              "ref": 21
+            },
+            "once": {
               "ref": 23
             },
-            "removeAllListeners": {
+            "removeListener": {
               "ref": 25
             },
-            "listeners": {
+            "removeAllListeners": {
               "ref": 27
+            },
+            "listeners": {
+              "ref": 29
             },
             "route": {
               "type": "constant",
@@ -7240,28 +7255,28 @@ var packageMetadata = {
               "type": "function"
             },
             "setMaxListeners": {
-              "ref": 15
-            },
-            "emit": {
               "ref": 17
             },
+            "emit": {
+              "ref": 19
+            },
             "addListener": {
-              "ref": 19
-            },
-            "on": {
-              "ref": 19
-            },
-            "once": {
               "ref": 21
             },
-            "removeListener": {
+            "on": {
+              "ref": 21
+            },
+            "once": {
               "ref": 23
             },
-            "removeAllListeners": {
+            "removeListener": {
               "ref": 25
             },
-            "listeners": {
+            "removeAllListeners": {
               "ref": 27
+            },
+            "listeners": {
+              "ref": 29
             }
           }
         },
@@ -7852,7 +7867,7 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "6f4ab3326909874815c870f2f12ef62bd4639a43"
+          "value": "be81b2843827882837bb716bcc8b8ce5581bd08d"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
@@ -7860,7 +7875,7 @@ var packageMetadata = {
         },
         "autoupdateVersionCordova": {
           "type": "constant",
-          "value": "none"
+          "value": "b43618bf538d160228765d1bf3cde0b465e9ff30"
         },
         "appId": {
           "type": "constant",
