@@ -1,4 +1,5 @@
 <template name="draw">
+    Remaining: <span class="remaining">{{ current.remaining }}</span><br/>
     {{#if isAdmin}}
         <select name="role" class="roles">
             <option value="X">-- Select role --</option>
@@ -9,6 +10,5 @@
         </select> <br/>
         <button class="draw btn btn-primary" disabled={{disableDraw}}>Draw!</button>
     {{/if}}
-    Remaining: <span class="remaining">{{ current.remaining }}</span><br/>
-        <button class="stopBid btn btn-danger">Stop!</button>
+        <button class="stopBid btn btn-danger">Stop!</button><br />
 </template>
