@@ -7085,7 +7085,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "ab36a26596493fde234c60512d9cba203fcd0dab"
+                  "value": "3d036f01fe600cc4666a7eca9d97bf70c8c9ff31"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7100,7 +7100,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "d4405f73a42bc333e93e5ca90a23ee4f5b039dff"
+                  "value": "aac1a5de2bd47d8cef4bc4f79c11fcf3f7bffe49"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7867,7 +7867,7 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "4c0879b2cbd9e68bc8383acb6231a1f86cfed133"
+          "value": "a0e7394348489fab970b156cffe51ea59b5945a8"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
@@ -7875,7 +7875,7 @@ var packageMetadata = {
         },
         "autoupdateVersionCordova": {
           "type": "constant",
-          "value": "d4405f73a42bc333e93e5ca90a23ee4f5b039dff"
+          "value": "aac1a5de2bd47d8cef4bc4f79c11fcf3f7bffe49"
         },
         "appId": {
           "type": "constant",
