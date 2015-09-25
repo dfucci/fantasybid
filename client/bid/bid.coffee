@@ -7,7 +7,10 @@ Template.bid.events
     cOwner = Meteor.user().emails[0].address.split('@')[0]
     Current.update({_id:curr._id}, {$set:{"player.cost":offer, "player.ownerId":Meteor.userId(), "player.owner":cOwner}}) if canBid()
 
-Template.bid.helpers currentOffering: -> cOffering = Current.findOne().player?.cost ? 0 parseInt(cOffering) + 1
+Template.bid.helpers 
+  currentOffering: -> 
+    cOffering = Current.findOne().player?.cost ? 0
+    parseInt(cOffering) + 1
 
 
 # Three requirements need to be satisfied in order to bid:
