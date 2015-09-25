@@ -1,14 +1,15 @@
 <template name="draw">
-    Remaining: <span class="remaining">{{ current.remaining }}</span><br/>
-    {{#if isAdmin}}
-        <select name="role" class="roles">
-            <option value="X">-- Select role --</option>
-            <option value="P">Goalkeeper</option>
-            <option value="D">Defender</option>
-            <option value="C">Midfielder</option>
-            <option value="A">Forward</option>
-        </select> <br/>
-        <button class="draw btn btn-primary" disabled={{disableDraw}}>Draw!</button>
-        <button class="stopBid btn btn-danger">Stop!</button><br />
-    {{/if}}
+  <h3>Rimanenti: <span class="remaining">{{ current.remaining }}</span><br/></h3>
+  {{#if isAdmin}}
+    <select name="role" class="roles">
+      <option value="X">-- Select role --</option>
+      <option value="P">Goalkeeper</option>
+      <option value="D">Defender</option>
+      <option value="C">Midfielder</option>
+      <option value="A">Forward</option>
+    </select> <br/>
+    <button class="draw btn btn-primary" disabled={{disableDraw}}>Draw!</button>
+    <button class="stopBid btn btn-danger">Stop!</button><br />
+    <br />
+  {{/if}}
 </template>

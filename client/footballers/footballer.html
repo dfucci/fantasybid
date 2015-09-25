@@ -1,9 +1,14 @@
 <template name="footballer">
-    Name: <span class="name">{{current.player.NAME}}</span><br/>
-    Team: <span class="team">{{current.player.TEAM}}</span><br/>
-    Role: <span class="role">{{current.player.ROLE}}</span><br/>
-    Offer: <span class="cost">{{current.player.cost}}</span><br/>
-    Winner: <span class="cost">{{current.player.owner}}</span><br/>
+  <div class="jumbotron" >
+    <h2>
+      <span class="name">{{current.player.NAME}}</span>,
+      <span class="team">{{current.player.TEAM}}</span>
+      (<span class="role">{{current.player.ROLE}}</span>)
+    </h2>
+    <h3>Valutazione corrente: <span class="cost">{{current.player.cost}}</span><br />
+      Vincitore corrente: <span class="cost">{{current.player.owner}}</span><br/>
+    </h3>     
+  </div>
 </template>
 
 

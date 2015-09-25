@@ -1,6 +1,8 @@
 <template name="bid">
-    <form class="bid-form">
-      <input type="number" min=0 name="price" class="offering" value={{currentOffering}}> <br/>
-        <button type="submit" class="offer btn btn-success" disabled={{current.bidding}}>Offer!</button>
-    </form>
+  <form class="bid-form">
+    <div>
+      <input type="number" min=0 name="price" class="offering" value={{currentOffering}}> 
+      <button type="submit" class="offer btn btn-success" disabled={{current.bidding}}>Offer!</button>
+    </div>
+  </form>
 </template>

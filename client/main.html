@@ -1,12 +1,17 @@
 <template name="main">
- <div class="container">
-    <h1>Welcome</h1>
-    {{> loginButtons }} <br/>
-    {{> footballer }}
-    {{> draw}}
-    {{#if loggedIn }}
-        {{ > bid }}
-    {{/if}}
-    {{> teams}}
- </div>
+  {{> loginButtons }} <br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        {{> footballer }}
+        {{> draw}}
+        {{#if loggedIn }}
+          {{ > bid }}
+        {{/if}}
+      </div>
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        {{> teams}}
+      </div>
+    </div>
+  </div>
 </template>
