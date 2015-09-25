@@ -1,38 +1,40 @@
 <template name="teams">
   <h1>TEAMS</h1>
   {{#each users}}
-    {{#each emails}}
-      <p><h4><span class="glyphicon glyphicon-user" ></span> {{formatEmail address}}</h4></p>
-    {{/each}}
-    <table class="table-striped" >
-      <thead>
-        <tr>
-          <th><em>Name</em></th>
-          <th><em>Role</em></th>
-          <th><em>Team</em></th>
-          <th><em>Cost</em></th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each profile.players}}
+    <div class="team-table">
+      {{#each emails}}
+        <p><h4><span class="glyphicon glyphicon-user" ></span> {{formatEmail address}}</h4></p>
+      {{/each}}
+      <table class="table" >
+        <thead>
           <tr>
-            <td>{{NAME}}</td>
-            <td>{{ROLE}}</td>
-            <td>{{TEAM}}</td>
-            <td>{{cost}}</td>
+            <th><em>Name</em></th>
+            <th><em>Role</em></th>
+            <th><em>Team</em></th>
+            <th><em>Cost</em></th>
           </tr>
-        {{/each}}
-      </tbody>
-      <tfoot>
-      <tr>
-        <td> 
-          <p><strong>Remaining credits: {{profile.credits}} </strong> </p>
-        </td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      </tfoot>
-    </table>
+        </thead>
+        <tbody>
+          {{#each profile.players}}
+            <tr>
+              <td>{{NAME}}</td>
+              <td>{{ROLE}}</td>
+              <td>{{TEAM}}</td>
+              <td>{{cost}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td> 
+              <p><strong>Remaining credits: {{profile.credits}} </strong> </p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
   {{/each}}
 </template>
