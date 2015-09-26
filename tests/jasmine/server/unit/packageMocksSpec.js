@@ -7086,7 +7086,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "48c04c2deb11bd6245434131db146ca530a72dee"
+                  "value": "c60d95c2366caa193e89c82f2c2b86ac22cc2d0c"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7101,7 +7101,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "ff286607a1368376d50db04edd90afdf3ce980fc"
+                  "value": "9486bf2c3cc2466bb9d12fd386ae95fb7ac2510a"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7225,7 +7225,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 4
+              "value": 1
             },
             "timeout": {
               "type": "constant",
@@ -7868,15 +7868,15 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "2d56dce0ab4e195196f358b9f4b4764ff8808472"
+          "value": "96020929ded494482559f5bede70d6561fa42e2d"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "07898bfdf66fffddad647dad8b2cebc05617b68f"
+          "value": "f531a790678c6c98e60e2c3e3045d3516ca06339"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
-          "value": "ff286607a1368376d50db04edd90afdf3ce980fc"
+          "value": "9486bf2c3cc2466bb9d12fd386ae95fb7ac2510a"
         },
         "appId": {
           "type": "constant",
@@ -7887,836 +7887,6 @@ var packageMetadata = {
   },
   "meteor-platform": {},
   "coffeescript": {},
-  "iron:core": {
-    "Iron": {
-      "type": "object",
-      "members": {
-        "utils": {
-          "type": "object",
-          "members": {
-            "assert": {
-              "type": "function"
-            },
-            "warn": {
-              "type": "function"
-            },
-            "defaultValue": {
-              "type": "function"
-            },
-            "inherits": {
-              "type": "function"
-            },
-            "extend": {
-              "type": "function"
-            },
-            "namespace": {
-              "type": "function"
-            },
-            "resolve": {
-              "type": "function"
-            },
-            "capitalize": {
-              "type": "function"
-            },
-            "classCase": {
-              "type": "function"
-            },
-            "camelCase": {
-              "type": "function"
-            },
-            "notifyDeprecated": {
-              "type": "function"
-            },
-            "withDeprecatedNotice": {
-              "type": "function"
-            },
-            "debug": {
-              "type": "function"
-            },
-            "get": {
-              "type": "function"
-            }
-          }
-        },
-        "DynamicTemplate": {
-          "type": "function",
-          "members": {
-            "getParentDataContext": {
-              "type": "function",
-              "refID": 31
-            },
-            "getDataContext": {
-              "type": "function",
-              "refID": 33
-            },
-            "getInclusionArguments": {
-              "type": "function",
-              "refID": 35
-            },
-            "args": {
-              "type": "function",
-              "refID": 37
-            },
-            "extend": {
-              "type": "function",
-              "refID": 39
-            },
-            "findFirstLookupHost": {
-              "type": "function",
-              "refID": 41
-            },
-            "findLookupHostWithProperty": {
-              "type": "function",
-              "refID": 43
-            },
-            "findLookupHostWithHelper": {
-              "type": "function",
-              "refID": 45
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "template": {
-                  "type": "function",
-                  "refID": 48
-                },
-                "defaultTemplate": {
-                  "type": "function",
-                  "refID": 50
-                },
-                "clear": {
-                  "type": "function"
-                },
-                "data": {
-                  "type": "function",
-                  "refID": 54
-                },
-                "create": {
-                  "type": "function",
-                  "refID": 56
-                },
-                "renderView": {
-                  "type": "function",
-                  "refID": 58
-                },
-                "destroy": {
-                  "type": "function",
-                  "refID": 60
-                },
-                "onViewCreated": {
-                  "type": "function",
-                  "refID": 62
-                },
-                "onViewReady": {
-                  "type": "function",
-                  "refID": 64
-                },
-                "onViewDestroyed": {
-                  "type": "function",
-                  "refID": 66
-                },
-                "events": {
-                  "type": "function",
-                  "refID": 68
-                },
-                "insert": {
-                  "type": "function",
-                  "refID": 70
-                }
-              }
-            }
-          }
-        },
-        "Layout": {
-          "type": "function",
-          "refID": 72,
-          "members": {
-            "DEFAULT_REGION": {
-              "type": "constant",
-              "value": "main"
-            },
-            "getParentDataContext": {
-              "ref": 31
-            },
-            "getDataContext": {
-              "ref": 33
-            },
-            "getInclusionArguments": {
-              "ref": 35
-            },
-            "args": {
-              "ref": 37
-            },
-            "extend": {
-              "ref": 39
-            },
-            "findFirstLookupHost": {
-              "ref": 41
-            },
-            "findLookupHostWithProperty": {
-              "ref": 43
-            },
-            "findLookupHostWithHelper": {
-              "ref": 45
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "constructor": {
-                  "ref": 72
-                },
-                "region": {
-                  "type": "function"
-                },
-                "destroyRegions": {
-                  "type": "function"
-                },
-                "render": {
-                  "type": "function"
-                },
-                "has": {
-                  "type": "function"
-                },
-                "regionKeys": {
-                  "type": "function"
-                },
-                "clear": {
-                  "type": "function"
-                },
-                "clearAll": {
-                  "type": "function"
-                },
-                "beginRendering": {
-                  "type": "function"
-                },
-                "onRegionCreated": {
-                  "type": "function"
-                },
-                "onRegionRendered": {
-                  "type": "function"
-                },
-                "onRegionDestroyed": {
-                  "type": "function"
-                },
-                "template": {
-                  "ref": 48
-                },
-                "defaultTemplate": {
-                  "ref": 50
-                },
-                "data": {
-                  "ref": 54
-                },
-                "create": {
-                  "ref": 56
-                },
-                "renderView": {
-                  "ref": 58
-                },
-                "destroy": {
-                  "ref": 60
-                },
-                "onViewCreated": {
-                  "ref": 62
-                },
-                "onViewReady": {
-                  "ref": 64
-                },
-                "onViewDestroyed": {
-                  "ref": 66
-                },
-                "events": {
-                  "ref": 68
-                },
-                "insert": {
-                  "ref": 70
-                }
-              }
-            }
-          }
-        },
-        "Url": {
-          "type": "function",
-          "members": {
-            "normalize": {
-              "type": "function"
-            },
-            "isSameOrigin": {
-              "type": "function"
-            },
-            "fromQueryString": {
-              "type": "function"
-            },
-            "toQueryString": {
-              "type": "function"
-            },
-            "parse": {
-              "type": "function"
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "test": {
-                  "type": "function"
-                },
-                "exec": {
-                  "type": "function"
-                },
-                "params": {
-                  "type": "function"
-                },
-                "resolve": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "MiddlewareStack": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "findByName": {
-                  "type": "function"
-                },
-                "push": {
-                  "type": "function"
-                },
-                "append": {
-                  "type": "function"
-                },
-                "insertAt": {
-                  "type": "function"
-                },
-                "insertBefore": {
-                  "type": "function"
-                },
-                "insertAfter": {
-                  "type": "function"
-                },
-                "concat": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "Controller": {
-          "type": "function",
-          "members": {
-            "extend": {
-              "type": "function",
-              "refID": 135
-            },
-            "events": {
-              "type": "function",
-              "refID": 137
-            },
-            "helpers": {
-              "type": "function",
-              "refID": 139
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "layout": {
-                  "type": "function",
-                  "refID": 142
-                },
-                "render": {
-                  "type": "function",
-                  "refID": 144
-                },
-                "beginRendering": {
-                  "type": "function",
-                  "refID": 146
-                },
-                "init": {
-                  "type": "function"
-                },
-                "wait": {
-                  "type": "function",
-                  "refID": 150
-                },
-                "ready": {
-                  "type": "function",
-                  "refID": 152
-                }
-              }
-            }
-          }
-        },
-        "RouteController": {
-          "type": "function",
-          "members": {
-            "extend": {
-              "ref": 135
-            },
-            "events": {
-              "ref": 137
-            },
-            "helpers": {
-              "ref": 139
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "constructor": {
-                  "type": "function"
-                },
-                "lookupOption": {
-                  "type": "function"
-                },
-                "configureFromUrl": {
-                  "type": "function"
-                },
-                "runHooks": {
-                  "type": "function"
-                },
-                "getParams": {
-                  "type": "function"
-                },
-                "setParams": {
-                  "type": "function"
-                },
-                "init": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                },
-                "layout": {
-                  "ref": 142
-                },
-                "render": {
-                  "ref": 144
-                },
-                "beginRendering": {
-                  "ref": 146
-                },
-                "wait": {
-                  "ref": 150
-                },
-                "ready": {
-                  "ref": 152
-                }
-              }
-            }
-          }
-        },
-        "Route": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "getName": {
-                  "type": "function"
-                },
-                "findControllerConstructor": {
-                  "type": "function"
-                },
-                "createController": {
-                  "type": "function"
-                },
-                "setControllerParams": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                },
-                "path": {
-                  "type": "function"
-                },
-                "url": {
-                  "type": "function"
-                },
-                "params": {
-                  "type": "function"
-                },
-                "get": {
-                  "type": "function"
-                },
-                "post": {
-                  "type": "function"
-                },
-                "put": {
-                  "type": "function"
-                },
-                "delete": {
-                  "type": "function"
-                },
-                "patch": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "Router": {
-          "type": "function",
-          "members": {
-            "HOOK_TYPES": {
-              "type": "array"
-            },
-            "hooks": {
-              "type": "object",
-              "members": {
-                "loading": {
-                  "type": "function"
-                },
-                "dataNotFound": {
-                  "type": "function"
-                }
-              }
-            },
-            "plugins": {
-              "type": "object",
-              "members": {
-                "loading": {
-                  "type": "function"
-                },
-                "dataNotFound": {
-                  "type": "function"
-                }
-              }
-            },
-            "bodyParser": {
-              "type": "function",
-              "members": {
-                "json": {
-                  "type": "function"
-                },
-                "raw": {
-                  "type": "function"
-                },
-                "text": {
-                  "type": "function"
-                },
-                "urlencoded": {
-                  "type": "function"
-                }
-              }
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "init": {
-                  "type": "function"
-                },
-                "configure": {
-                  "type": "function"
-                },
-                "map": {
-                  "type": "function"
-                },
-                "route": {
-                  "type": "function"
-                },
-                "findFirstRoute": {
-                  "type": "function"
-                },
-                "path": {
-                  "type": "function"
-                },
-                "url": {
-                  "type": "function"
-                },
-                "createController": {
-                  "type": "function"
-                },
-                "setTemplateNameConverter": {
-                  "type": "function"
-                },
-                "setControllerNameConverter": {
-                  "type": "function"
-                },
-                "toTemplateName": {
-                  "type": "function"
-                },
-                "toControllerName": {
-                  "type": "function"
-                },
-                "addHook": {
-                  "type": "function"
-                },
-                "lookupHook": {
-                  "type": "function"
-                },
-                "getHooks": {
-                  "type": "function"
-                },
-                "onRun": {
-                  "type": "function"
-                },
-                "onRerun": {
-                  "type": "function"
-                },
-                "onBeforeAction": {
-                  "type": "function"
-                },
-                "onAfterAction": {
-                  "type": "function"
-                },
-                "onStop": {
-                  "type": "function"
-                },
-                "waitOn": {
-                  "type": "function"
-                },
-                "subscriptions": {
-                  "type": "function"
-                },
-                "load": {
-                  "type": "function"
-                },
-                "before": {
-                  "type": "function"
-                },
-                "after": {
-                  "type": "function"
-                },
-                "unload": {
-                  "type": "function"
-                },
-                "plugin": {
-                  "type": "function"
-                },
-                "configureBodyParsers": {
-                  "type": "function"
-                },
-                "start": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "iron:dynamic-template": {},
-  "iron:layout": {},
-  "iron:url": {},
-  "iron:middleware-stack": {
-    "Handler": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "test": {
-              "type": "function"
-            },
-            "params": {
-              "type": "function"
-            },
-            "resolve": {
-              "type": "function"
-            },
-            "clone": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "iron:location": {},
-  "reactive-dict": {
-    "ReactiveDict": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "set": {
-              "type": "function"
-            },
-            "setDefault": {
-              "type": "function"
-            },
-            "get": {
-              "type": "function"
-            },
-            "equals": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "iron:controller": {},
-  "iron:router": {
-    "Router": {
-      "type": "function",
-      "members": {
-        "routes": {
-          "type": "array"
-        },
-        "options": {
-          "type": "object"
-        },
-        "init": {
-          "type": "function"
-        },
-        "configure": {
-          "type": "function"
-        },
-        "map": {
-          "type": "function"
-        },
-        "route": {
-          "type": "function"
-        },
-        "findFirstRoute": {
-          "type": "function"
-        },
-        "path": {
-          "type": "function"
-        },
-        "url": {
-          "type": "function"
-        },
-        "createController": {
-          "type": "function"
-        },
-        "setTemplateNameConverter": {
-          "type": "function"
-        },
-        "setControllerNameConverter": {
-          "type": "function"
-        },
-        "toTemplateName": {
-          "type": "function"
-        },
-        "toControllerName": {
-          "type": "function"
-        },
-        "addHook": {
-          "type": "function"
-        },
-        "lookupHook": {
-          "type": "function"
-        },
-        "getHooks": {
-          "type": "function"
-        },
-        "onRun": {
-          "type": "function"
-        },
-        "onRerun": {
-          "type": "function"
-        },
-        "onBeforeAction": {
-          "type": "function"
-        },
-        "onAfterAction": {
-          "type": "function"
-        },
-        "onStop": {
-          "type": "function"
-        },
-        "waitOn": {
-          "type": "function"
-        },
-        "subscriptions": {
-          "type": "function"
-        },
-        "load": {
-          "type": "function"
-        },
-        "before": {
-          "type": "function"
-        },
-        "after": {
-          "type": "function"
-        },
-        "unload": {
-          "type": "function"
-        },
-        "plugin": {
-          "type": "function"
-        },
-        "configureBodyParsers": {
-          "type": "function"
-        },
-        "start": {
-          "type": "function"
-        },
-        "dispatch": {
-          "type": "function"
-        }
-      }
-    },
-    "RouteController": {
-      "type": "function",
-      "members": {
-        "extend": {
-          "type": "function"
-        },
-        "events": {
-          "type": "function"
-        },
-        "helpers": {
-          "type": "function"
-        },
-        "prototype": {
-          "type": "object",
-          "members": {
-            "constructor": {
-              "type": "function"
-            },
-            "lookupOption": {
-              "type": "function"
-            },
-            "configureFromUrl": {
-              "type": "function"
-            },
-            "runHooks": {
-              "type": "function"
-            },
-            "getParams": {
-              "type": "function"
-            },
-            "setParams": {
-              "type": "function"
-            },
-            "init": {
-              "type": "function"
-            },
-            "dispatch": {
-              "type": "function"
-            },
-            "layout": {
-              "type": "function"
-            },
-            "render": {
-              "type": "function"
-            },
-            "beginRendering": {
-              "type": "function"
-            },
-            "wait": {
-              "type": "function"
-            },
-            "ready": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
   "practicalmeteor:loglevel": {
     "loglevel": {
       "type": "object",
@@ -10352,9 +9522,6 @@ var packageMetadata = {
             "future": {
               "type": "function"
             },
-            "deprecate": {
-              "type": "function"
-            },
             "tap": {
               "type": "function"
             },
@@ -10388,6 +9555,836 @@ var packageMetadata = {
     }
   },
   "reneberwanger:bootstrap-table": {},
+  "iron:core": {
+    "Iron": {
+      "type": "object",
+      "members": {
+        "utils": {
+          "type": "object",
+          "members": {
+            "assert": {
+              "type": "function"
+            },
+            "warn": {
+              "type": "function"
+            },
+            "defaultValue": {
+              "type": "function"
+            },
+            "inherits": {
+              "type": "function"
+            },
+            "extend": {
+              "type": "function"
+            },
+            "namespace": {
+              "type": "function"
+            },
+            "resolve": {
+              "type": "function"
+            },
+            "capitalize": {
+              "type": "function"
+            },
+            "classCase": {
+              "type": "function"
+            },
+            "camelCase": {
+              "type": "function"
+            },
+            "notifyDeprecated": {
+              "type": "function"
+            },
+            "withDeprecatedNotice": {
+              "type": "function"
+            },
+            "debug": {
+              "type": "function"
+            },
+            "get": {
+              "type": "function"
+            }
+          }
+        },
+        "DynamicTemplate": {
+          "type": "function",
+          "members": {
+            "getParentDataContext": {
+              "type": "function",
+              "refID": 31
+            },
+            "getDataContext": {
+              "type": "function",
+              "refID": 33
+            },
+            "getInclusionArguments": {
+              "type": "function",
+              "refID": 35
+            },
+            "args": {
+              "type": "function",
+              "refID": 37
+            },
+            "extend": {
+              "type": "function",
+              "refID": 39
+            },
+            "findFirstLookupHost": {
+              "type": "function",
+              "refID": 41
+            },
+            "findLookupHostWithProperty": {
+              "type": "function",
+              "refID": 43
+            },
+            "findLookupHostWithHelper": {
+              "type": "function",
+              "refID": 45
+            },
+            "prototype": {
+              "type": "object",
+              "members": {
+                "template": {
+                  "type": "function",
+                  "refID": 48
+                },
+                "defaultTemplate": {
+                  "type": "function",
+                  "refID": 50
+                },
+                "clear": {
+                  "type": "function"
+                },
+                "data": {
+                  "type": "function",
+                  "refID": 54
+                },
+                "create": {
+                  "type": "function",
+                  "refID": 56
+                },
+                "renderView": {
+                  "type": "function",
+                  "refID": 58
+                },
+                "destroy": {
+                  "type": "function",
+                  "refID": 60
+                },
+                "onViewCreated": {
+                  "type": "function",
+                  "refID": 62
+                },
+                "onViewReady": {
+                  "type": "function",
+                  "refID": 64
+                },
+                "onViewDestroyed": {
+                  "type": "function",
+                  "refID": 66
+                },
+                "events": {
+                  "type": "function",
+                  "refID": 68
+                },
+                "insert": {
+                  "type": "function",
+                  "refID": 70
+                }
+              }
+            }
+          }
+        },
+        "Layout": {
+          "type": "function",
+          "refID": 72,
+          "members": {
+            "DEFAULT_REGION": {
+              "type": "constant",
+              "value": "main"
+            },
+            "getParentDataContext": {
+              "ref": 31
+            },
+            "getDataContext": {
+              "ref": 33
+            },
+            "getInclusionArguments": {
+              "ref": 35
+            },
+            "args": {
+              "ref": 37
+            },
+            "extend": {
+              "ref": 39
+            },
+            "findFirstLookupHost": {
+              "ref": 41
+            },
+            "findLookupHostWithProperty": {
+              "ref": 43
+            },
+            "findLookupHostWithHelper": {
+              "ref": 45
+            },
+            "prototype": {
+              "type": "object",
+              "members": {
+                "constructor": {
+                  "ref": 72
+                },
+                "region": {
+                  "type": "function"
+                },
+                "destroyRegions": {
+                  "type": "function"
+                },
+                "render": {
+                  "type": "function"
+                },
+                "has": {
+                  "type": "function"
+                },
+                "regionKeys": {
+                  "type": "function"
+                },
+                "clear": {
+                  "type": "function"
+                },
+                "clearAll": {
+                  "type": "function"
+                },
+                "beginRendering": {
+                  "type": "function"
+                },
+                "onRegionCreated": {
+                  "type": "function"
+                },
+                "onRegionRendered": {
+                  "type": "function"
+                },
+                "onRegionDestroyed": {
+                  "type": "function"
+                },
+                "template": {
+                  "ref": 48
+                },
+                "defaultTemplate": {
+                  "ref": 50
+                },
+                "data": {
+                  "ref": 54
+                },
+                "create": {
+                  "ref": 56
+                },
+                "renderView": {
+                  "ref": 58
+                },
+                "destroy": {
+                  "ref": 60
+                },
+                "onViewCreated": {
+                  "ref": 62
+                },
+                "onViewReady": {
+                  "ref": 64
+                },
+                "onViewDestroyed": {
+                  "ref": 66
+                },
+                "events": {
+                  "ref": 68
+                },
+                "insert": {
+                  "ref": 70
+                }
+              }
+            }
+          }
+        },
+        "Url": {
+          "type": "function",
+          "members": {
+            "normalize": {
+              "type": "function"
+            },
+            "isSameOrigin": {
+              "type": "function"
+            },
+            "fromQueryString": {
+              "type": "function"
+            },
+            "toQueryString": {
+              "type": "function"
+            },
+            "parse": {
+              "type": "function"
+            },
+            "prototype": {
+              "type": "object",
+              "members": {
+                "test": {
+                  "type": "function"
+                },
+                "exec": {
+                  "type": "function"
+                },
+                "params": {
+                  "type": "function"
+                },
+                "resolve": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "MiddlewareStack": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "findByName": {
+                  "type": "function"
+                },
+                "push": {
+                  "type": "function"
+                },
+                "append": {
+                  "type": "function"
+                },
+                "insertAt": {
+                  "type": "function"
+                },
+                "insertBefore": {
+                  "type": "function"
+                },
+                "insertAfter": {
+                  "type": "function"
+                },
+                "concat": {
+                  "type": "function"
+                },
+                "dispatch": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "Controller": {
+          "type": "function",
+          "members": {
+            "extend": {
+              "type": "function",
+              "refID": 135
+            },
+            "events": {
+              "type": "function",
+              "refID": 137
+            },
+            "helpers": {
+              "type": "function",
+              "refID": 139
+            },
+            "prototype": {
+              "type": "object",
+              "members": {
+                "layout": {
+                  "type": "function",
+                  "refID": 142
+                },
+                "render": {
+                  "type": "function",
+                  "refID": 144
+                },
+                "beginRendering": {
+                  "type": "function",
+                  "refID": 146
+                },
+                "init": {
+                  "type": "function"
+                },
+                "wait": {
+                  "type": "function",
+                  "refID": 150
+                },
+                "ready": {
+                  "type": "function",
+                  "refID": 152
+                }
+              }
+            }
+          }
+        },
+        "RouteController": {
+          "type": "function",
+          "members": {
+            "extend": {
+              "ref": 135
+            },
+            "events": {
+              "ref": 137
+            },
+            "helpers": {
+              "ref": 139
+            },
+            "prototype": {
+              "type": "object",
+              "members": {
+                "constructor": {
+                  "type": "function"
+                },
+                "lookupOption": {
+                  "type": "function"
+                },
+                "configureFromUrl": {
+                  "type": "function"
+                },
+                "runHooks": {
+                  "type": "function"
+                },
+                "getParams": {
+                  "type": "function"
+                },
+                "setParams": {
+                  "type": "function"
+                },
+                "init": {
+                  "type": "function"
+                },
+                "dispatch": {
+                  "type": "function"
+                },
+                "layout": {
+                  "ref": 142
+                },
+                "render": {
+                  "ref": 144
+                },
+                "beginRendering": {
+                  "ref": 146
+                },
+                "wait": {
+                  "ref": 150
+                },
+                "ready": {
+                  "ref": 152
+                }
+              }
+            }
+          }
+        },
+        "Route": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "getName": {
+                  "type": "function"
+                },
+                "findControllerConstructor": {
+                  "type": "function"
+                },
+                "createController": {
+                  "type": "function"
+                },
+                "setControllerParams": {
+                  "type": "function"
+                },
+                "dispatch": {
+                  "type": "function"
+                },
+                "path": {
+                  "type": "function"
+                },
+                "url": {
+                  "type": "function"
+                },
+                "params": {
+                  "type": "function"
+                },
+                "get": {
+                  "type": "function"
+                },
+                "post": {
+                  "type": "function"
+                },
+                "put": {
+                  "type": "function"
+                },
+                "delete": {
+                  "type": "function"
+                },
+                "patch": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "Router": {
+          "type": "function",
+          "members": {
+            "HOOK_TYPES": {
+              "type": "array"
+            },
+            "hooks": {
+              "type": "object",
+              "members": {
+                "loading": {
+                  "type": "function"
+                },
+                "dataNotFound": {
+                  "type": "function"
+                }
+              }
+            },
+            "plugins": {
+              "type": "object",
+              "members": {
+                "loading": {
+                  "type": "function"
+                },
+                "dataNotFound": {
+                  "type": "function"
+                }
+              }
+            },
+            "bodyParser": {
+              "type": "function",
+              "members": {
+                "json": {
+                  "type": "function"
+                },
+                "raw": {
+                  "type": "function"
+                },
+                "text": {
+                  "type": "function"
+                },
+                "urlencoded": {
+                  "type": "function"
+                }
+              }
+            },
+            "prototype": {
+              "type": "object",
+              "members": {
+                "init": {
+                  "type": "function"
+                },
+                "configure": {
+                  "type": "function"
+                },
+                "map": {
+                  "type": "function"
+                },
+                "route": {
+                  "type": "function"
+                },
+                "findFirstRoute": {
+                  "type": "function"
+                },
+                "path": {
+                  "type": "function"
+                },
+                "url": {
+                  "type": "function"
+                },
+                "createController": {
+                  "type": "function"
+                },
+                "setTemplateNameConverter": {
+                  "type": "function"
+                },
+                "setControllerNameConverter": {
+                  "type": "function"
+                },
+                "toTemplateName": {
+                  "type": "function"
+                },
+                "toControllerName": {
+                  "type": "function"
+                },
+                "addHook": {
+                  "type": "function"
+                },
+                "lookupHook": {
+                  "type": "function"
+                },
+                "getHooks": {
+                  "type": "function"
+                },
+                "onRun": {
+                  "type": "function"
+                },
+                "onRerun": {
+                  "type": "function"
+                },
+                "onBeforeAction": {
+                  "type": "function"
+                },
+                "onAfterAction": {
+                  "type": "function"
+                },
+                "onStop": {
+                  "type": "function"
+                },
+                "waitOn": {
+                  "type": "function"
+                },
+                "subscriptions": {
+                  "type": "function"
+                },
+                "load": {
+                  "type": "function"
+                },
+                "before": {
+                  "type": "function"
+                },
+                "after": {
+                  "type": "function"
+                },
+                "unload": {
+                  "type": "function"
+                },
+                "plugin": {
+                  "type": "function"
+                },
+                "configureBodyParsers": {
+                  "type": "function"
+                },
+                "start": {
+                  "type": "function"
+                },
+                "dispatch": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "iron:dynamic-template": {},
+  "iron:layout": {},
+  "iron:url": {},
+  "iron:middleware-stack": {
+    "Handler": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "test": {
+              "type": "function"
+            },
+            "params": {
+              "type": "function"
+            },
+            "resolve": {
+              "type": "function"
+            },
+            "clone": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "iron:location": {},
+  "reactive-dict": {
+    "ReactiveDict": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "set": {
+              "type": "function"
+            },
+            "setDefault": {
+              "type": "function"
+            },
+            "get": {
+              "type": "function"
+            },
+            "equals": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "iron:controller": {},
+  "iron:router": {
+    "Router": {
+      "type": "function",
+      "members": {
+        "routes": {
+          "type": "array"
+        },
+        "options": {
+          "type": "object"
+        },
+        "init": {
+          "type": "function"
+        },
+        "configure": {
+          "type": "function"
+        },
+        "map": {
+          "type": "function"
+        },
+        "route": {
+          "type": "function"
+        },
+        "findFirstRoute": {
+          "type": "function"
+        },
+        "path": {
+          "type": "function"
+        },
+        "url": {
+          "type": "function"
+        },
+        "createController": {
+          "type": "function"
+        },
+        "setTemplateNameConverter": {
+          "type": "function"
+        },
+        "setControllerNameConverter": {
+          "type": "function"
+        },
+        "toTemplateName": {
+          "type": "function"
+        },
+        "toControllerName": {
+          "type": "function"
+        },
+        "addHook": {
+          "type": "function"
+        },
+        "lookupHook": {
+          "type": "function"
+        },
+        "getHooks": {
+          "type": "function"
+        },
+        "onRun": {
+          "type": "function"
+        },
+        "onRerun": {
+          "type": "function"
+        },
+        "onBeforeAction": {
+          "type": "function"
+        },
+        "onAfterAction": {
+          "type": "function"
+        },
+        "onStop": {
+          "type": "function"
+        },
+        "waitOn": {
+          "type": "function"
+        },
+        "subscriptions": {
+          "type": "function"
+        },
+        "load": {
+          "type": "function"
+        },
+        "before": {
+          "type": "function"
+        },
+        "after": {
+          "type": "function"
+        },
+        "unload": {
+          "type": "function"
+        },
+        "plugin": {
+          "type": "function"
+        },
+        "configureBodyParsers": {
+          "type": "function"
+        },
+        "start": {
+          "type": "function"
+        },
+        "dispatch": {
+          "type": "function"
+        }
+      }
+    },
+    "RouteController": {
+      "type": "function",
+      "members": {
+        "extend": {
+          "type": "function"
+        },
+        "events": {
+          "type": "function"
+        },
+        "helpers": {
+          "type": "function"
+        },
+        "prototype": {
+          "type": "object",
+          "members": {
+            "constructor": {
+              "type": "function"
+            },
+            "lookupOption": {
+              "type": "function"
+            },
+            "configureFromUrl": {
+              "type": "function"
+            },
+            "runHooks": {
+              "type": "function"
+            },
+            "getParams": {
+              "type": "function"
+            },
+            "setParams": {
+              "type": "function"
+            },
+            "init": {
+              "type": "function"
+            },
+            "dispatch": {
+              "type": "function"
+            },
+            "layout": {
+              "type": "function"
+            },
+            "render": {
+              "type": "function"
+            },
+            "beginRendering": {
+              "type": "function"
+            },
+            "wait": {
+              "type": "function"
+            },
+            "ready": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
   "session": {},
   "livedata": {
     "DDP": {

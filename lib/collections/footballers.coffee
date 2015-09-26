@@ -1,11 +1,10 @@
 @Footballers = new Mongo.Collection 'footballers'
 @Current = new Mongo.Collection 'current'
 
-Accounts.onCreateUser((options, user)-> 
-  user.profile = {} if user.profile is undefined
-  _.extend(user.profile, {credits: 300})
-  user
-)
+#Accounts.onCreateUser (options, user) -> 
+  #user.profile = {} if user.profile is undefined
+  #_.extend(user.profile, {credits: 300})
+  #user
 
 Meteor.users.allow
   update: ->
