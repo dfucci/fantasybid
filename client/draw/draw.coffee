@@ -6,10 +6,10 @@ Template.draw.events
   "change .roles": (e, tpl) ->
     e.preventDefault()
     role = tpl.$("select[name='role']").val()
-    if role isnt "A"
+    if role isnt "X"
       Meteor.call 'remainingPlayers', role, (err, res) ->
         alert err.reason if err
-    tpl.$(".remaining").text "" if role is "A"
+    tpl.$(".remaining").text "" if role is "X"
 
   "click .draw": (e, tpl) ->
     e.preventDefault()
